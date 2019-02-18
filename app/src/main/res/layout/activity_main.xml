@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/background" />
+
+            <LinearLayout
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-210dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/vvv"
+                    app:civ_border_color="@color/semiTransparentWhite"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="24dp">
+
+                    <TextView
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:typeface="serif"
+                        android:text="Kumar Vikash Vikash Vikash Kumar"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_marginBottom="5dp"
+                        android:padding="5dp"
+                        android:typeface="serif"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17067123164749487884947"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+   android:id="@+id/vikash"
+            android:layout_below="@id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@id/linearLayoout1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#fff"
+                    android:id="@+id/notice"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoout1"
+                        android:background="@drawable/buttonstyleforstudentcorner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:typeface="serif"
+                            android:text="10"
+                            android:textSize="30sp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="10dp"/>
+                        <TextView
+                            android:textAlignment="center"
+                            android:typeface="serif"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_marginTop="10dp"
+                            android:text="No. of Right Answer"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#fff"
+                    android:id="@+id/notice"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:background="@drawable/buttonstyleforstudentcorner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:typeface="serif"
+                            android:text="10"
+                            android:textSize="30sp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="10dp"/>
+                        <TextView
+                            android:textAlignment="center"
+                            android:typeface="serif"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_marginTop="10dp"
+                            android:text="No. of Wrong Answer"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@id/linearLayoout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#fff"
+                    android:id="@+id/notice"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:background="@drawable/buttonstyleforstudentcorner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:typeface="serif"
+                            android:text="10"
+                            android:textSize="30sp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="10dp"/>
+                        <TextView
+                            android:textAlignment="center"
+                            android:typeface="serif"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_marginTop="10dp"
+                            android:text="Today's Score"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#fff"
+                    android:id="@+id/notice"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:background="@drawable/buttonstyleforstudentcorner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:typeface="serif"
+                            android:text="10"
+                            android:textSize="30sp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="10dp"/>
+                        <TextView
+                            android:textAlignment="center"
+                            android:typeface="serif"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:layout_marginTop="10dp"
+                            android:text="Overall Score"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+<RelativeLayout
+    android:id="@+id/Relativelyout2"
+    android:layout_below="@id/vikash"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/bank_card"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:padding="10dp"
+                android:src="@drawable/rank"
+                android:layout_width="95dp"
+                android:layout_height="95dp"/>
+
+            <TextView
+
+                android:layout_marginLeft="150dp"
+                android:id="@+id/textView10"
+                android:textSize="30sp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#4a4a4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="10000"/>
+
+            <TextView
+                android:id="@+id/textViewregid"
+                android:textSize="20sp"
+                android:layout_marginLeft="150dp"
+                android:layout_below="@+id/textView10"
+                android:textAlignment="center"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textColor="#9b9b9b"
+                android:layout_width="wrap_content"
+                android:text="Current Ranking"
+
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:layout_below="@+id/Relativelyout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.AppCompatButton
+
+       android:drawableRight="@drawable/ic_arrow_forward"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:textColor="#fff"
+        app:backgroundTint="#008577"
+        android:padding="10dp"
+        android:text="View Ranking "
+        android:layout_width="200dp"
+        android:layout_height="70dp" />
+
+</RelativeLayout>
+    </RelativeLayout>
+
+
+
+</ScrollView>
